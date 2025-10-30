@@ -10,7 +10,7 @@ import { Footer } from '@/sections/footer1';
 
 export default function Home() {
   return (
-    <div>
+    <div id="inicio">
       <Navbar />
       <main>
         <div className="bg-[url('/images/bg.png')] bg-cover bg-center relative rounded-b-[70px] sm:rounded-b-[200px]"> 
@@ -28,7 +28,36 @@ export default function Home() {
       </main> 
       <Footer /> 
       <footer className="bg-[#62bfff] text-white text-center py-4 text-xl ">
-        © {new Date().getFullYear()} NEVOU. Todos os direitos reservados.
+        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row md:justify-between md:items-center space-y-2 md:space-y-0">
+        
+        {/* 1. BLOCKS DE INFORMAÇÃO (Agrupado) */}
+        <div className="text-left flex flex-col md:space-x-4">
+            
+            {/* Copyright e Direitos Reservados */}
+            <p className="whitespace-nowrap">
+                © {new Date().getFullYear()} NEVOU. Todos os direitos reservados.
+            </p>
+            
+            {/* CNPJ */}
+            <p className="whitespace-nowrap">
+                CNPJ: 50.081.980.0001-72
+            </p>
+        </div>
+        
+        {/* 2. CRÉDITOS (Alinhado à direita) */}
+        <p className="whitespace-nowrap mt-2 md:mt-0">
+            Desenvolvido por{' '}
+            <a
+                href="https://www.instagram.com/desbugdigital/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-gray-200 transition-colors"
+            >
+                DesbugDigital
+            </a>
+        </p>
+        
+    </div>
       </footer>
     </div>
   );

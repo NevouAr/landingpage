@@ -13,7 +13,7 @@ export function Footer() {
                         <p className="text-gray-200">Aceitamos Pix, Cartão de Crédito e Débito.</p>
                     </div>
                     <div className="flex space-x-6">                        
-                        <a 
+                        {/* <a 
                             href="https://facebook.com/seuperfil" 
                             target="_blank" 
                             rel="noopener noreferrer"
@@ -25,9 +25,9 @@ export function Footer() {
                                 width={32} 
                                 height={32}
                             />
-                        </a>
+                        </a> */}
                         <a
-                            href="https://instagram.com/seuperfil" 
+                            href="https://www.instagram.com/nevou_arcondicionado/" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             aria-label="Instagram"
@@ -40,7 +40,8 @@ export function Footer() {
                             />
                         </a>
                     </div>
-                    <div className="flex items-center">
+                    <a href="#inicio">
+                        <div className="flex items-center">
                         <Image 
                             src="/images/logo.png"
                             alt="NEVOU Ar Condicionado"
@@ -49,6 +50,7 @@ export function Footer() {
                             className="object-contain"
                         />
                     </div>
+                    </a>
                 </div>
             </div>
         </footer>
