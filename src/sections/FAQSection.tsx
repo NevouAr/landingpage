@@ -1,5 +1,3 @@
-// src/components/sections/FAQSection.tsx
-
 import {
   Accordion,
   AccordionContent,
@@ -31,11 +29,9 @@ const faqData = [
 ];
 
 export function FAQSection() {
-
   return (
     <section id="faq" className="py-20 mb-20"> 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-1">
-
         <Accordion type="single" collapsible className="w-full space-y-4">
           {faqData.map((item, index) => (
             <AccordionItem 
@@ -43,7 +39,6 @@ export function FAQSection() {
               value={`item-${index}`} 
               className="border-none rounded-lg shadow-md overflow-hidden" 
             >
-              
               <AccordionTrigger 
                 className="bg-faq-gradient text-white font-extrabold text-2xl px-6 py-6 transition-colors rounded-t-lg"
               >
@@ -51,7 +46,7 @@ export function FAQSection() {
               </AccordionTrigger>
               
               <AccordionContent 
-                className="bg-[#5694BD] text-white px-6 py-4 border-t border-blue-200 rounded-b-lg text-xl font-bold "
+                className="bg-[#5694BD] text-white px-6 py-4 border-t border-blue-200 rounded-b-lg text-xl font-bold"
               >
                 {item.answer}
               </AccordionContent>
