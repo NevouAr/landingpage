@@ -15,7 +15,20 @@ export function Navbar() {
     <header className="absolute top-0 left-0 w-full z-50 p-4 md:p-6 text-white">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         <div className="flex items-center space-x-2">
-          <Image src="/images/logo.png" alt="NEVOU Logo" width={207.8} height={61.2} priority /> 
+          <Image 
+                src="/images/logo.png" 
+                alt="NEVOU Logo" 
+                
+                // ⚠️ CORREÇÃO APLICADA AQUI
+                // w-[120px] é o tamanho Mobile (padrão)
+                // md:w-[207.8px] é o tamanho Desktop
+                className="w-[120px] h-auto md:w-[207.8px]" 
+                
+                // Definimos o tamanho máximo para que a otimização funcione
+                width={208} 
+                height={62} 
+                priority 
+            />
         </div>
 
         <nav className="hidden sm:flex space-x-6 text-sm font-semibold tracking-wider">
@@ -37,7 +50,7 @@ export function Navbar() {
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-blue-950 text-white border-none">
+            <SheetContent side="right" className="bg-blue-950 text-white border-none text-center p">
               <nav className="flex flex-col space-y-4 pt-8">
                 {navLinks.map((link) => (
                   <a 

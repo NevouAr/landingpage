@@ -11,7 +11,7 @@ const serviceCards = [
     imageSrc: "/images/instalacao.jpg",
     description: "Instalamos o seu ar-condicionado com qualidade, rapidez e garantia. Nossa equipe é especializada em seguir os padrões recomendados pelos fabricantes, garantindo uma instalação segura, eficiente e com resultado duradouro.",
     buttonText: "Instale agora",
-    linkUrl: "https://wa.me/5585981773376?text=Ol%C3%A1%2C%20quero%20fazer%20manutenção%20preventiva"
+    linkUrl: "https://wa.me/5585981773376?text=Ol%C3%A1%2C+gostaria+de+solicitar+um+orçamento+para+instala%C3%A7%C3%A3o+de+ar-condicionado."
   },
   {
     title: "MANUTENÇÃO",
@@ -19,7 +19,7 @@ const serviceCards = [
     imageSrc: "/images/manutencao.jpg",
     description: "Cuidamos do seu ar-condicionado de forma completa: manutenção preventiva para evitar falhas, reduzir o consumo de energia e prolongar a vida útil, e manutenção corretiva para resolver problemas de forma rápida e eficiente.",
     buttonText: "Agende hoje",
-    linkUrl: "https://wa.me/5585981773376?text=Quero%20fazer%20uma%20instala%C3%A7%C3%A3o"
+    linkUrl: "https://wa.me/5585981773376?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+manuten%C3%A7%C3%A3o+(preventiva+ou+corretiva)."
   },
   {
     title: "ACOMPANHAMENTO",
@@ -27,7 +27,7 @@ const serviceCards = [
     imageSrc: "/images/acompanhamento.jpg",
     description: "Oferecemos soluções completas em climatização residencial e comercial, com diversos planos de manutenção contínua, que asseguram eficiência, economia de energia e prevenção de falhas no momento em que precisar.",
     buttonText: "Solicite agora",
-    linkUrl: "https://wa.me/5585981773376?text=Quero%20ver%20quais%20planos%20voc%C3%AAs%20oferecem%3F"
+    linkUrl: "https://wa.me/5585981773376?text=Ol%C3%A1%2C+tenho+interesse+nos+planos+de+acompanhamento+e+manuten%C3%A7%C3%A3o+cont%C3%ADnua."
   }
 ];
 
@@ -65,7 +65,7 @@ export function Services() {
 
               <CardContent className="px-6 py-0 flex flex-col flex-grow">
                 <div className="text-justify flex-grow">
-                  <p className="text-blue-800 text-sm mb-3 text-justify">
+                  <p className="text-[#0D67A4] text-sm font-extrabold mb-3 text-justify">
                     {service.description}
                   </p>
                 </div>
@@ -73,7 +73,7 @@ export function Services() {
                 <div className="text-center mt-auto py-4">
                   <Button 
                     size="pq"
-                    className="btn-agenda-gradient hover:bg-sky-600 text-white font-bold text-base lg:text-3xl py-3 lg:py-6 px-4 lg:px-8 rounded-full transition-all font-sans w-full"
+                    className="btn-agenda-gradient hover:bg-sky-600 text-white font-bold text-xl lg:text-3xl py-6 lg:py-6 px-4 lg:px-8 rounded-full transition-all font-sans w-full"
                     asChild
                   >
                     <a 
